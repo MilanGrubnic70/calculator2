@@ -1,1 +1,5 @@
-window.Calculator = {};
+window.Calculator = {
+	add: function  () {
+		// body...
+	};
+};
