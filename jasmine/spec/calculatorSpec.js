@@ -11,5 +11,8 @@ describe('Calculator', function() {
         expect(Calculator.add(5)).toEqual(10);
     });
 
+   	it('should any number of numbers', function() {
+   		expect(Calculator.add(1,2,3)).toEqual(6);
+   	});
 
 });
