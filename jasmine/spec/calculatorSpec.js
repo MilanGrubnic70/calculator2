@@ -30,10 +30,19 @@ describe('Calculator', function() {
     });
 
     describe('when resetting', function() {
-    	it('should reset the current value', function  () {
-    		Calculator.reset();
-    		expect(Calculator.current).toEqual(0);
-    	})
+        it('should reset the current value', function() {
+            Calculator.current = 1;
+            Calculator.reset();
+            expect(Calculator.current).toEqual(0);
+
+            Calculator.add(5);
+            Calculator.add(20);
+            expect(Calculator.current).toEqual(25);
+
+            Calculator.reset();
+            expect(Calculator.current).toEqual(0);
+
+        })
     });
 
 });
