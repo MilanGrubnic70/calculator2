@@ -1,10 +1,13 @@
-var Calculator = {
+window.Calculator = {
+	current: 0,
 
-    current: 0,
+	add: function  () {
+		var sum = this.current;
+		for (var i = 0; i < arguments.length; i++) {
+			sum += arguments[i];
+		};
 
-    add: function(num) {
-        this.current += num;
-        return this.current;
-    }
-
-};
+		this.current = sum;
+		return this.current;
+	}
+}
