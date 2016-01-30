@@ -1,5 +1,10 @@
 var Calculator = {
+
+    current: 0,
+
     add: function(num) {
-        return 0 + num;
+        this.current += num;
+        return this.current;
     }
+
 };
