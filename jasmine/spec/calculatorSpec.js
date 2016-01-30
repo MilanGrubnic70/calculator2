@@ -22,5 +22,11 @@ describe('Calculator', function() {
         });
 
     });
-    
+
+    describe('when subtracting numbers', function() {
+        it('should subtract any numbers', function() {
+            expect(Calculator.subtract(5)).toEqual(-5);
+        });
+    });
+
 });
