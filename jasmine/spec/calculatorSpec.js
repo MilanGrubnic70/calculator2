@@ -29,4 +29,11 @@ describe('Calculator', function() {
         });
     });
 
+    describe('when resetting', function() {
+    	it('should reset the current value', function  () {
+    		Calculator.reset();
+    		expect(Calculator.current).toEqual(0);
+    	})
+    });
+
 });
