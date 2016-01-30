@@ -1,5 +1,9 @@
 describe('Calculator', function() {
 
+	beforeEach(function() {
+		Calculator.current = 0;
+	});
+
     it('should store the current value at all times', function() {
         expect(Calculator.current).toBeDefined();
         // expect(Calculator.current).toEqual(0);
